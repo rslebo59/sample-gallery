@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Faded Gallery</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
     <div class="site-container">
@@ -14,13 +14,55 @@
                 <header></header>
                 <div>
                     <section class="grid-gallery">
-                        <div class=""></div>
+                        <div class="grid-gallery__slide-container">
+                            <div class="grid-gallery__slide-item is-active" data-index="0">
+                                <div class="grid-gallery__container">
+                                    <div class="grid-gallery__grid" style="--grid-image: url(https://placehold.co/1440x810);"></div>
+                                    <div class="grid-gallery__grid" style="--grid-image: url(https://placehold.co/1440x810);"></div>
+                                    <div class="grid-gallery__grid" style="--grid-image: url(https://placehold.co/1440x810);"></div>
+                                    <div class="grid-gallery__grid" style="--grid-image: url(https://placehold.co/1440x810);"></div>
+                                </div>
+    
+                                <figure class="grid-gallery__figure">
+                                    <img src="https://placehold.co/1440x810" alt="" width="1440" height="810"/>
+                                </figure>
+                            </div>
+                            
+                            <div class="grid-gallery__slide-item" data-index="1">
+                                <div class="grid-gallery__container">
+                                    <div class="grid-gallery__grid" style="--grid-image: url(https://placehold.co/1440x810);"></div>
+                                    <div class="grid-gallery__grid" style="--grid-image: url(https://placehold.co/1440x810);"></div>
+                                    <div class="grid-gallery__grid" style="--grid-image: url(https://placehold.co/1440x810);"></div>
+                                    <div class="grid-gallery__grid" style="--grid-image: url(https://placehold.co/1440x810);"></div>
+                                </div>
+    
+                                <figure class="grid-gallery__figure">
+                                    <img src="https://placehold.co/1440x810" alt="" width="1440" height="810"/>
+                                </figure>
+                            </div>
+                        </div>
+                        
+                        <div class="grid-gallery__footer">
+                            <button id="prevSlide">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+                                    <path d="M256 512c141.385 0 256-114.615 256-256s-114.615-256-256-256-256 114.615-256 256 114.615 256 256 256zM256 48c114.875 0 208 93.125 208 208s-93.125 208-208 208-208-93.125-208-208 93.125-208 208-208z"></path>
+                                    <path d="M334.628 158.628l-45.256-45.256-142.627 142.628 142.628 142.627 45.254-45.254-97.372-97.373z"></path>
+                                </svg>
+                            </button>
+                            
+                            <button id="nextSlide">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+                                    <path d="M256 0c-141.385 0-256 114.615-256 256s114.615 256 256 256 256-114.615 256-256-114.615-256-256-256zM256 464c-114.875 0-208-93.125-208-208s93.125-208 208-208 208 93.125 208 208-93.125 208-208 208z"></path>
+                                    <path d="M177.372 353.372l45.256 45.256 142.627-142.628-142.628-142.627-45.254 45.254 97.372 97.373z"></path>
+                                </svg>
+                            </button>
+                        </div>
                     </section>
                 </div>
             </article>
         </main>
         <footer></footer>
     </div>
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
